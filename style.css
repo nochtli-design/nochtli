@@ -1,0 +1,827 @@
+body {
+    background-color: #F1E8D2;
+    color: #243A29;
+}
+h1 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(50px, 7vw, 110px);
+    font-weight: 700;
+    line-height: 0.95;
+    margin: 20px 0;
+}
+.slogan {
+   font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+.logo {
+    font-family: "Syne", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 50px;
+    position: relative;
+}
+.hero-text {
+    max-width: 800px;
+}
+.button {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #F1E8D2;
+    background-color: #243A29;
+    padding: 14px 24px;
+}
+.hero img {
+    width: 48%;
+    max-width: 600px;
+    object-fit: contain;
+    transform: translateX(20px);
+}
+.eyebrow {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero-texture {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+
+    background-image: url("images/textura_nopal.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.12;
+
+    border-radius: 40% 60% 55% 45%;
+
+    top: 35%;
+    left: 5%;
+    transform: translate(20%, -50%);
+
+    z-index: 0;
+    pointer-events: none;
+}
+.hero {
+    isolation: isolate;
+}
+
+.hero-text,
+.hero img {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #243A29;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+.button {
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+.story {
+    min-height: 70vh;
+    padding: 120px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.story h2 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.9;
+    max-width: 900px;
+    margin: 20px 0;
+}
+html, body {
+    overflow-x: hidden;
+}
+.story {
+    width: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero img {
+    flex: 0 1 48%;
+    min-width: 0;
+}
+.hero {
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 500px;
+}
+
+.hero img {
+    flex: 1 1 400px;
+}
+.story-text {
+    max-width: 420px;
+    margin-left: 52%;
+    margin-top: 20px;
+}
+
+.story-text p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.story-line {
+    width: 80px;
+    height: 3px;
+    background-color: #243A29;
+    margin-top: 35px;
+}
+.material {
+    min-height: 90vh;
+    padding: 120px 50px;
+    position: relative;
+}
+
+.material h2 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.9;
+    max-width: 800px;
+    margin: 30px 0 80px;
+}
+.material-process {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+}
+
+.material-process > div {
+    flex: 1;
+    padding-top: 20px;
+    border-top: 2px solid #243A29;
+}
+
+.material-process span {
+    display: block;
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.material-process h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 32px;
+    margin: 0 0 15px;
+    letter-spacing: -1px;
+}
+
+.material-process p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 220px;
+}
+.collection {
+    min-height: 100vh;
+    padding: 120px 50px;
+}
+
+.collection h2 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.9;
+    margin: 30px 0 80px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px 40px;
+}
+
+.product img {
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+}
+
+.product span {
+    display: block;
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.product h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+}
+.product {
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+.product img {
+    transition: transform 0.4s ease;
+}
+
+.product:hover img {
+    transform: scale(1.02);
+}
+html {
+    scroll-behavior: smooth;
+}
+.story-texture {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background-image: url("images/textura_nopal.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.07;
+    border-radius: 60% 40% 35% 65%;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.story > *:not(.story-texture) {
+    position: relative;
+    z-index: 1;
+}
+.hero {
+    overflow: hidden;
+}
+
+.story {
+    overflow: hidden;
+}
+.hero {
+    position: relative;
+}
+
+.story {
+    position: relative;
+}
+
+.material {
+    position: relative;
+}
+
+.collection {
+    position: relative;
+}
+
+.material-step {
+    transition: transform 0.3s ease;
+}
+.material-step:hover {
+    transform: translateY(-8px);
+}
+.material-step {
+    position: relative;
+}
+
+.material-step:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -30px;
+    top: 20px;
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+}
+@media (max-width: 700px) {
+
+    .material-step:not(:last-child)::after {
+        display: none;
+    }
+
+}
+.product:nth-child(2) {
+    margin-top: 60px;
+}
+
+.product:nth-child(4) {
+    margin-top: 60px;
+}
+@media (max-width: 700px) {
+
+    .product:nth-child(2),
+    .product:nth-child(4) {
+        margin-top: 0;
+    }
+
+}
+.closing {
+    min-height: 90vh;
+    padding: 120px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    overflow: hidden;
+} 
+.closing h2 {
+    font-family: "Syne", sans-serif;
+
+    font-size: clamp(55px, 9vw, 140px);
+
+    font-weight: 700;
+    line-height: 0.88;
+
+    max-width: 1100px;
+
+    margin: 25px 0 40px;
+
+    letter-spacing: -3px;
+}
+.closing-text {
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 20px;
+
+    margin: 0 0 30px;
+}
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+
+    /* SECCIONES */
+
+    .hero,
+    .story,
+    .material,
+    .collection,
+    .closing {
+        padding: 80px 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero img {
+        width: 100%;
+        transform: none;
+    }
+
+
+    /* HISTORIA */
+
+    .story-text {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+
+    /* MATERIAL */
+
+    .material-process {
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 0;
+    }
+
+    .material-step {
+        width: 100%;
+    }
+
+
+    /* COLECCIÓN */
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .product:nth-child(2),
+    .product:nth-child(4) {
+        margin-top: 0;
+    }
+
+
+    /* CIERRE */
+
+    .closing h2 {
+        letter-spacing: -2px;
+    }
+
+}
+/* ============================= /
+/ FICHAS DE PRODUCTO /
+/ ============================= */
+.product-link {
+color: inherit;
+text-decoration: none;
+display: block;
+}
+/* =========================
+   FICHAS DE PRODUCTO
+========================= */
+
+.product-detail {
+  min-height: 100vh;
+  padding: 120px 8vw;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 6vw;
+  scroll-margin-top: 20px;
+}
+
+/* IMAGEN */
+
+.detail-image {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.detail-image img:hover {
+  transform: scale(1.03);
+}
+
+/* INFORMACIÓN */
+
+.detail-info {
+  max-width: 520px;
+}
+
+.detail-info h2 {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(70px, 9vw, 140px);
+  line-height: 0.8;
+  margin: 15px 0 35px;
+  letter-spacing: -0.06em;
+}
+
+.detail-info p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 450px;
+  margin-bottom: 35px;
+}
+
+/* DATOS DEL PRODUCTO */
+
+.detail-info strong {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+}
+
+.detail-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.detail-info li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(36, 58, 41, 0.25);
+  font-family: "DM Sans", sans-serif;
+}
+
+/* BOTÓN VOLVER */
+
+.detail-info a {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #243A29;
+  text-decoration: none;
+  border-bottom: 1px solid #243A29;
+  padding-bottom: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.detail-info a:hover {
+  opacity: 0.5;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+.product-detail {
+
+    min-height: auto;
+
+    padding: 90px 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+}
+
+
+.detail-image {
+
+    height: 420px;
+
+}
+
+
+.detail-info h2 {
+
+    font-size: clamp(65px, 20vw, 100px);
+
+    letter-spacing: -2px;
+
+}
+
+
+.detail-description {
+
+    font-size: 16px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.detail-data div {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+}
+/* ============================= /
+/ PROPIEDADES DEL MATERIAL /
+/ ============================= */
+.material-properties {
+margin-top: 140px;
+
+max-width: 1100px;
+
+margin-left: auto;
+
+}
+.material-properties > .eyebrow {
+margin-bottom: 40px;
+
+}
+.properties-grid {
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 0 60px;
+
+border-top: 2px solid #243A29;
+
+}
+.property {
+padding: 35px 0;
+
+border-bottom: 1px solid #243A29;
+
+}
+.property span {
+display: block;
+
+font-family: "Barlow Condensed", sans-serif;
+
+font-size: 14px;
+
+letter-spacing: 2px;
+
+margin-bottom: 15px;
+
+}
+.property h3 {
+font-family: "Syne", sans-serif;
+
+font-size: 28px;
+
+line-height: 1;
+
+margin: 0 0 15px;
+
+}
+.property p {
+font-family: "DM Sans", sans-serif;
+
+font-size: 15px;
+
+line-height: 1.6;
+
+max-width: 400px;
+
+margin: 0;
+
+}
+/* ANIMACIÓN */
+.property {
+transition: transform 0.3s ease;
+
+}
+.property:hover {
+transform: translateX(8px);
+
+}
+/* CELULAR */
+@media (max-width: 700px) {
+.material-properties {
+
+    margin-top: 100px;
+
+    margin-left: 0;
+
+}
+
+
+.properties-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+}
+
+
+.property {
+
+    padding: 30px 0;
+
+}
+
+
+.property h3 {
+
+    font-size: 25px;
+
+}
+
+}
+/* ============================= /
+/ CRÉDITO DEL MATERIAL /
+/ ============================= */
+.material-credit {
+margin-top: 80px;
+
+padding-top: 25px;
+
+border-top: 1px solid #243A29;
+
+max-width: 700px;
+
+}
+.material-credit p {
+font-family: "Barlow Condensed", sans-serif;
+
+font-size: 13px;
+
+letter-spacing: 2px;
+
+margin: 0 0 12px;
+
+}
+.material-credit span {
+font-family: "DM Sans", sans-serif;
+
+font-size: 13px;
+
+line-height: 1.6;
+
+opacity: 0.75;
+
+}
+.material-credit a {
+color: #243A29;
+
+font-weight: 600;
+
+text-decoration: underline;
+
+text-underline-offset: 3px;
+
+}
+/* CELULAR */
+@media (max-width: 700px) {
+.material-credit {
+
+    margin-top: 60px;
+
+}
+
+}
+/* Etiqueta de producto */
+
+.product-tag {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: -10px 0 25px;
+  opacity: 0.65;
+}
