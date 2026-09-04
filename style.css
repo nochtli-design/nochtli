@@ -627,11 +627,10 @@ display: block;
 
 
 .detail-info h2 {
-
-    font-size: clamp(65px, 20vw, 100px);
-
+    font-size: clamp(52px, 15vw, 80px);
+    line-height: 0.85;
     letter-spacing: -2px;
-
+    margin: 10px 0 20px;
 }
 
 
@@ -812,6 +811,21 @@ text-underline-offset: 3px;
 
     margin-top: 60px;
 
+}
+/* AJUSTE DE TÍTULOS EN CELULAR */
+
+h1 {
+  font-size: clamp(38px, 11vw, 58px);
+  line-height: 0.92;
+}
+
+.story h2,
+.material h2,
+.collection h2,
+.closing h2 {
+  font-size: clamp(38px, 11vw, 58px);
+  line-height: 0.92;
+  letter-spacing: -1.5px;
 }
 
 }
