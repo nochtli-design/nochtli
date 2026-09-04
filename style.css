@@ -634,6 +634,10 @@ display: block;
     letter-spacing: -2px;
     margin: 10px 0 20px;
 }
+#terracota .detail-info h2 {
+    font-size: 48px;
+    white-space: nowrap;
+}
 
 
 .detail-description {
