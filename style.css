@@ -537,10 +537,10 @@ display: block;
 }
 
 .detail-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.4s ease;
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
 }
 
 .detail-image img:hover {
@@ -555,12 +555,12 @@ display: block;
 
 .detail-info h2 {
   font-family: "Syne", sans-serif;
-  font-size: clamp(60px, 7vw, 110px);
+  font-size: clamp(50px, 6vw, 90px);
   line-height: 0.85;
   margin: 15px 0 35px;
   letter-spacing: -0.05em;
   max-width: 100%;
-  overflow-wrap: break-word;
+  white-space: nowrap;
 }
 
 .detail-info p {
@@ -632,6 +632,10 @@ display: block;
 
 }
 
+.detail-image img {
+    width: 90%;
+    height: 90%;
+} 
 
 .detail-info h2 {
     font-size: clamp(52px, 15vw, 80px);
@@ -639,10 +643,7 @@ display: block;
     letter-spacing: -2px;
     margin: 10px 0 20px;
 }
-#terracota .detail-info h2 {
-    font-size: 48px;
-    white-space: nowrap;
-}
+
 
 
 .detail-description {
