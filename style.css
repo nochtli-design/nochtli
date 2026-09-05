@@ -592,6 +592,34 @@ display: block;
   font-family: "DM Sans", sans-serif;
 }
 
+.detail-data {
+    margin-top: 30px;
+    max-width: 450px;
+}
+
+.detail-data > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(36, 58, 41, 0.25);
+}
+
+.detail-data span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.detail-data strong {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+}
+
 /* BOTÓN VOLVER */
 
 .detail-info a {
