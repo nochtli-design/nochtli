@@ -16,10 +16,15 @@ h1 {
     margin-bottom: 30px;
 }
 .logo {
-    font-family: "Syne", sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 135px;
+    height: auto;
+    display: block;
 }
 header {
     display: flex;
