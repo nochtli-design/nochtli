@@ -420,9 +420,9 @@ html {
 .closing-text {
     font-family: "DM Sans", sans-serif;
 
-    font-size: 20px;
+    font-size: 22px;
 
-    margin: 0 0 30px;
+    margin: 0 0 35px;
 }
 @media (max-width: 700px) {
 
