@@ -110,12 +110,18 @@ nav a {
 }
 .button {
     font-family: "Barlow Condensed", sans-serif;
-    letter-spacing: 1px;
-    transition: transform 0.2s ease;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    padding: 12px 22px;
+    border: 1px solid #243A29;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .button:hover {
     transform: translateY(-3px);
+    background-color: #243A29;
+    color: #F1E8D2;
 }
 .story {
     min-height: 70vh;
